@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Titilium";
+    src: url("../ressources/font/titilium-web/TitilliumWeb-Regular.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: "Titilium";
+    src: url("../ressources/font/titilium-web/TitilliumWeb-Italic.ttf") format("truetype");
+
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Titilium";
+    src: url("../ressources/font/titilium-web/TitilliumWeb-Bold.ttf") format("truetype");
+
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: 'Titilium';
+}
+
+.fixed-header {
+    flex: content;
+    padding: 10px;
+    margin: 0;
+    background: rgb(1, 162, 255);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.information-container {
+	width: 700px;
+	margin: 40px auto;
+    padding: 10px;
+    background-color: rgba(19, 222, 236, 0.945);
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(19, 222, 236, 0.4);
+}
+
+.information-container > p {
+    white-space: pre-line;
+    font-size: 20px;
+	font-family: 'Titilium';
+}
+
+.information-container > p > a {
+    text-decoration: none;
+    color: rgb(255, 76, 5);
+}
+
+@media (max-width: 960px) {
+	.information-container {
+		width: 700px;
+	}
+}
+
+@media (max-width: 720px) {
+	.information-container {
+		width: 500px;
+	}
+}
+
+@media (max-width: 540px) {
+	.information-container {
+		width: 300px;
+	}
+}
+
+nav {
+    width: 100%;
+    left: 0;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    font-style: italic;
+}
+
+nav.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    font-style: italic;
+}
+
+nav > .item {
+    font-size: 14pt;
+    color: #fff;
+    padding: 23px;
+    text-decoration: none;
+    transition: .2s opacity linear;
+}
+
+nav > .item:hover {
+    opacity: .6;
+}
