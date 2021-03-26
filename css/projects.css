@@ -1,3 +1,29 @@
+.centered {
+    text-align: center;
+}
+
+#search-input {
+    font-size: 14pt;
+    padding: 10px;
+    margin: 10px 0;
+    min-width: 400px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    transition: .1s box-shadow linear;
+}
+
+#search-input:focus {
+    border-color: rgba(19, 222, 236, 0.945);
+    box-shadow: 0 0 5px rgba(19, 222, 236, 0.945);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .card-white {
     background-color: white;
     padding: 40px;
