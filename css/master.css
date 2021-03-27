@@ -91,14 +91,14 @@ nav {
     font-style: italic;
 }
 
-nav.fixed-top {
+.fixed-top {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #333;
-    padding: 10px 0;
-    color: #fff;
-    font-style: italic;
+}
+
+.fixed-top + .container {
+    margin-top: 70px;
 }
 
 nav > .item {
