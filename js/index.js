@@ -6,9 +6,9 @@ document.addEventListener("scroll", () => {
         document.body.getBoundingClientRect().top
     );
     if (distanceFromTop >= headerHeight) {
-        navBar.classList.add("fixed-top");
+        document.body.classList.add("fixed-top");
     } else {
-        navBar.classList.remove("fixed-top");
+        document.body.classList.remove("fixed-top");
     }
 })
 

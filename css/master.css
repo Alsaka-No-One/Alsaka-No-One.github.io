@@ -26,6 +26,14 @@ body {
     font-family: 'Titilium';
 }
 
+body.fixed-top .container {
+    margin-top: 70px;
+}
+
+body.fixed-top nav {
+    position: fixed;
+}
+
 .fixed-header {
     flex: content;
     padding: 10px;
@@ -43,23 +51,19 @@ body {
 }
 
 .information-container {
-	width: 700px;
-	margin: 40px auto;
-    padding: 10px;
-    background-color: rgba(19, 222, 236, 0.945);
-    text-align: center;
-    border: 1px solid grey;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(19, 222, 236, 0.4);
-}
-
-.information-container > p {
+    position: relative;
+    padding: 20px 40px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+    font-size: 18pt;
     white-space: pre-line;
-    font-size: 20px;
-	font-family: 'Titilium';
 }
 
-.information-container > p > a {
+.information-container > a {
     text-decoration: none;
     color: rgb(255, 76, 5);
 }
@@ -84,21 +88,12 @@ body {
 
 nav {
     width: 100%;
+    top: 0;
     left: 0;
     background: #333;
     padding: 10px 0;
     color: #fff;
-    font-style: italic;
-}
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.fixed-top + .container {
-    margin-top: 70px;
+    z-index: 1;
 }
 
 nav > .item {
