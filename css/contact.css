@@ -14,6 +14,7 @@
 
 .form {
     width: 100%;
+    /* height: 1800px; */
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -25,6 +26,56 @@
 
 .contact-information {
     background-color: #fff;
+    position: relative;
+    padding: 40px 35px;
+}
+
+.text {
+    color: #333;
+    margin: 0;
+    /* margin: 1.5rem 0 2rem 0; */
+}
+
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icon {
+    width: 28px;
+    margin-right: 0.7rem;
+}
+
+.social-media {
+    padding: 2rem 0 0 0;
+}
+
+.social-media p {
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, var(--contact-color), #084298);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: .2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.05);
 }
 
 .contact-form {
