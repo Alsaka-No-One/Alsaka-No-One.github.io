@@ -1,0 +1,162 @@
+:root {
+    --contact-color: rgb(1, 162, 255);
+    --contact-green-color: #1eff00;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.form {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 3;
+}
+
+.contact-information {
+    background-color: #fff;
+}
+
+.contact-form {
+    background-color: var(--contact-color);
+    position: relative;
+}
+
+form {
+    padding: 40px 35px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    color: #084298;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    margin: 15px 0;
+}
+
+/* label {
+    display: none;
+} */
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--contact-green-color);
+    background: none;
+    padding: 5px 0;
+    padding-left: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 5px 0;
+    padding-left: 20px;
+    min-height: 150px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #fff;
+    font-size: 14px;
+    pointer-events: none;
+    transition: .5s;
+    z-index: 3;
+}
+
+.input-container.textarea label{
+    top: 16px;
+    transform: translateY(0);
+}
+
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    padding: 0 6px;
+    color: transparent;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.input-container span:before,
+.input-container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: var(--contact-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container span:before {
+    left: 50%;
+}
+
+.input-container span:after {
+    right: 50%;
+}
+
+.input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 13px;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+    width: 50%;
+    opacity: 1;
+}
+
+.button {
+    padding: 5px 20px;
+    margin: 0;
+    border: 2px solid var(--contact-green-color);
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1;
+    transition: all .2 ease-in-out;
+    background-color: transparent;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: var(--contact-green-color);
+    color: #fff;
+}
