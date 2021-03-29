@@ -34,6 +34,10 @@ body.fixed-top nav {
     position: fixed;
 }
 
+.centered {
+    text-align: center;
+}
+
 .fixed-header {
     flex: content;
     padding: 10px;

@@ -1,0 +1,43 @@
+.morpion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    padding: 20px;
+}
+
+.button-morpion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.button-morpion button {
+    width: 90px;
+    height: 90px;
+    font-size: 45px;
+}
+
+.game-information {
+    height: 270px;
+    padding: 20px 40px;
+    margin-left: 16px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+    font-size: 18pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.game-information > a {
+    text-decoration: none;
+    color: rgb(255, 76, 5);
+    cursor: pointer;
+}
