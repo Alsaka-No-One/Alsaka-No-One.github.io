@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #F5EFEA;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #F5EFEA;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: inline-block;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+}
+
+.chef, .patisseries, .media, .locations {
+  margin-bottom: 20px;
+}
+
+.chef img {
+  width: 564px;
+  height: 702px;
+}
+
+.patisseries {
+  background-color: #e9e3de;
+}
+
+.patisseries img {
+  width: 710px;
+  height: 533px;
+}
+
+.locations {
+  background-color: #e9e3de;
+}
+
+.locations img {
+  width: 564px;
+  height: 404px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.content div {
+  flex: 1 1 300px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #F5EFEA;
+  font-size: 0.9rem;
+}
