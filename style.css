@@ -109,7 +109,7 @@ section {
   padding: 20px;
 }
 
-.chef, .patisseries, .media, .locations {
+.chef, .patisseries, .media, .locationsContact {
   margin-bottom: 20px;
 }
 
@@ -127,11 +127,13 @@ section {
   height: 533px;
 }
 
-.locations {
+.locationsContact {
   background-color: #e9e3de;
+  display: flex;
+  justify-content: space-around;
 }
 
-.locations img {
+.locationsContact img {
   width: 564px;
   height: 404px;
 }
