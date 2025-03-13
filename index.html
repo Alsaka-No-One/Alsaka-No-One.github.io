@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippe Lugnac - Pâtisseries</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -19,21 +18,23 @@
     </header>
 
     <div class="hero">
-        <div class="carousel">
-            <img src="hero-image1.jpg" alt="Image 1">
-            <img src="hero-image2.jpg" alt="Image 2">
-            <img src="hero-image3.jpg" alt="Image 3">
-            <img src="hero-image4.jpg" alt="Image 4">
-        </div>
-        
-        <p>"Nous travaillons à l'émotion pour proposer des pâtisseries inscrites dans la gourmandise et la modernité."</p>
-
-        <div class="carousel-buttons">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
+      <div class="carousel">
+          <img src="hero-image1.jpg" alt="Image 1" class="carousel-image active">
+          <img src="hero-image2.jpg" alt="Image 2" class="carousel-image">
+          <img src="hero-image3.jpg" alt="Image 3" class="carousel-image">
+          <img src="hero-image4.jpg" alt="Image 4" class="carousel-image">
+      </div>
+      
+      <p class="hero-text">
+          "Nous travaillons à l'émotion pour proposer des pâtisseries inscrites dans la gourmandise et la modernité."
+      </p>
+  
+      <div class="carousel-controls">
+          <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
+          <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
+      </div>
     </div>
-
+  
     <main>
         <section id="chef" class="chef">
           <div class="content">
@@ -96,5 +97,6 @@
     <footer>
         <p>&copy; 2025 Philippe Lugnac. Tous droits réservés.</p>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

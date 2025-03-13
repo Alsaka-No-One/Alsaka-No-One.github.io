@@ -1,18 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.querySelector(".carousel");
-  const images = document.querySelectorAll(".carousel img");
-  let index = 0;
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+console.log(images);
 
-  function showNextImage() {
-      index = (index + 1) % images.length;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
+function showImage(index) {
+    images.forEach(image => image.classList.remove('active'));
 
-  function showPreviousImage() {
-      index = (index - 1 + images.length) % images.length;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
+    images[index].classList.add('active');
+}
 
-  document.querySelector(".next").addEventListener("click", showNextImage);
-  document.querySelector(".prev").addEventListener("click", showPreviousImage);
-});
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+}
+
+// Affiche la première image au chargement
+showImage(currentIndex);
