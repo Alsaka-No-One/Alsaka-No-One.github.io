@@ -148,6 +148,10 @@ section {
   justify-content: space-around;
 }
 
+.media {
+  text-align: center;
+}
+
 .locationsContact img {
   width: 564px;
   height: 404px;
