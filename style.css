@@ -124,10 +124,14 @@ section {
   padding: 20px;
 }
 
-.chef, .patisseries, .media, .locationsContact {
+.chef, .patisseries, .media {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.locationsContact {
+  display: flex;;
 }
 
 .chef img {
@@ -146,8 +150,6 @@ section {
 
 .locationsContact {
   background-color: #e9e3de;
-  display: flex;
-  justify-content: space-around;
 }
 
 .media {
@@ -200,6 +202,10 @@ h2 {
 .informations img {
   height: auto;
   border-radius: 5px;
+}
+
+.right {
+  right: 0;
 }
 
 footer {
