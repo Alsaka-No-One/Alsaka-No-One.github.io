@@ -29,6 +29,21 @@ nav a {
   font-size: 1rem;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-left {
+  width: 33%;
+  height: 100vh;
+}
+
+.border-right {
+  width: 33%;
+  height: 100vh;
+}
+
 .hero {
   position: relative;
   width: 100vw; /* Prend 100% de la largeur de la fenêtre */
@@ -131,6 +146,10 @@ section {
   background-color: #e9e3de;
   display: flex;
   justify-content: space-around;
+}
+
+.media {
+  text-align: center;
 }
 
 .locationsContact img {
