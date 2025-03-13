@@ -125,6 +125,8 @@ section {
 }
 
 .chef, .patisseries, .media, .locationsContact {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -170,19 +172,34 @@ h2 {
 
 .grid {
   display: grid;
+  flex-direction: column;
   align-items: center; 
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
 }
 
-.content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.nos-patisseries {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
-.content div {
-  flex: 1 1 300px;
+.nos-patisseries img {
+  padding-bottom: 25%;
+}
+
+.informations {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.informations img {
+  height: auto;
+  border-radius: 5px;
 }
 
 footer {
